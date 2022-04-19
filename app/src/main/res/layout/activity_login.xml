@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/back">
+
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="18dp"
+        android:background="#fff"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="8dp"
+        android:background="#fff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/text1" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:layout_alignEnd="@+id/text2"
+        android:layout_marginTop="17dp"
+        android:text="Login"
+        android:textColor="#00CC99" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="34dp"
+        android:text="Belum memiliki akun?"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:textSize="36sp"
+        android:text="Selamat Datang"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/Daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/text3"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/text3"
+        android:text="Daftar Sekarang"
+        android:textColor="#FFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Daftar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible" />
+</RelativeLayout>
