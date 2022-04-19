@@ -16,9 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-
-        android:textSize="32sp"
-        android:text="Selamat Datang Pengguna" />
+        android:textAlignment="center"
+        android:text="Selamat Datang Pengguna"
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/menu"

@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
         TextView logout = findViewById(R.id.logout);
         TextView profil = findViewById(R.id.profile);
         profil.setOnClickListener(new View.OnClickListener() {
